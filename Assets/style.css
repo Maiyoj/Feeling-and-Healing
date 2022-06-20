@@ -1,8 +1,6 @@
-body{
+#Home{
     background-image: url("./images/istockphoto-1308922627-612x612.jpg");
-    background-size: cover;
+    height: 80vh;
     background-repeat: no-repeat;
-   
- 
-   
+    background-size: cover;
 }
