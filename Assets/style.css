@@ -1,3 +1,37 @@
+
+/* Navigation style */
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #74AA2F;
+    height: 10vh;
+}
+.logo{
+    margin-top: 10px;
+    font-size: 20px;
+}
+ul{
+    margin-right: 50px;
+}
+
+ul li{
+    display: inline-block;
+
+}
+ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+
+
+
+
+
+
 #Home{
     background-image: url("./images/istockphoto-1308922627-612x612.jpg");
     height: 80vh;
