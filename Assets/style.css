@@ -18,7 +18,7 @@ ul{
     margin-right: 50px;
 }
 
-ul li{
+.menu ul li{
     display: inline-block;
 
 }
@@ -199,5 +199,19 @@ ul li a{
 }
 #footer h2{
     color: #74AA2F;
+}
+
+.mediaicons i{
+    padding-right: 20px;
+   
+}
+
+.contactbox input{
+    padding: 12px;
+}
+.contactbox button{
+    background-color: #74AA2F;
+    font-size: 20px;
+    padding: 9px;
 }
 
