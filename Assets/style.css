@@ -104,4 +104,5 @@ ul li a{
 .blogcolumn{
     display: flex;
     flex-direction: column;
+    width: 30%;
 }
