@@ -42,6 +42,7 @@ ul li a{
 
 #Home h1{
     font-size: 40px;
+   
 }
 
  .content{
@@ -70,16 +71,37 @@ ul li a{
 /* About us section */
 #about{
     height: 70vh;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 #about h1{
     text-align: center;
+    color: #74AA2F;
 }
 .aboutBody{
     display: flex;
     flex-direction: row;
     margin-top: 40px;
     margin-bottom: 50px;
+}
+.abtImg{
+    margin-left: 40px;
+}
+.abtContent{
+    margin-top: 40px;
+    font-size: 18px;
+}
+.abtContent h2{
+    text-align: center;
+    color:#74AA2F;
+}
+
+.abtContent button{
+
+    background-color: #74AA2F;
+    padding: 10px 30px 10px 40px;
+    border-radius: 15px;
+    color: white;
+    border: 2px solid white;
 }
 
 
