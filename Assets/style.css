@@ -97,12 +97,11 @@ ul li a{
     flex-direction: row;
     margin-bottom: 40px;
     justify-content: space-around;
-    width: 25%
+
   
 }
 
 .blogcolumn{
     display: flex;
     flex-direction: column;
-
 }
