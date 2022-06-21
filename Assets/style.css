@@ -32,12 +32,13 @@ ul li a{
 
 /* Section home */
 #Home{
-    background-image: url("./images/istockphoto-1308922627-612x612.jpg");
+    background:url("./images/istockphoto-1308922627-612x612.jpg");
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
-
+   
 }
+
 
 #Home h1{
     font-size: 40px;
@@ -56,14 +57,19 @@ ul li a{
     opacity: 0.8;
     padding: 10px 30px 10px 40px;
     border-radius: 15px;
+    color: white;
+    border: 2px solid white;
 }
 
 
 /* About us section */
 #about{
-    height: 60vh;
+    height: 70vh;
+    margin-top: 40px;
 }
-
+#about h1{
+    text-align: center;
+}
 .aboutBody{
     display: flex;
     flex-direction: row;
@@ -98,7 +104,6 @@ ul li a{
     padding: 10px 10px 10px 10px;
     width: 25%;
     justify-content: space-around;
-
 }
 
 /* Blogs style */
