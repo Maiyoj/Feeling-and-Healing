@@ -45,15 +45,15 @@ ul li a{
 #therapist{
     background-color: black;
     color:white;
-    margin-top: 50%;
+   
 }
 
 
 .therapist-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 40px;
+    justify-content: space-around;
   
 
 
@@ -63,9 +63,10 @@ ul li a{
     display: flex;
     flex-direction: column;
     border: 2px solid  #74AA2F;
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 10px 10px 10px 10px;
-    width: 30%;
+    width: 25%;
+    justify-content: space-around;
  
    
 }
