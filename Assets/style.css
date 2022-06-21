@@ -150,6 +150,20 @@ ul li a{
     border: 2px solid white;
 }
 /* Blogs style */
+#Blog{
+    margin-top: 60px;
+    height: 70vh;
+}
+#Blog h1{
+    text-align: center;
+    color: #74AA2F;
+}
+#Blog h4{
+    text-align: center;
+    color: #74AA2F;
+    font-weight: lighter;
+    
+}
 .blogrow{
     display: flex;
     flex-direction: row;
@@ -161,6 +175,9 @@ ul li a{
     display: flex;
     flex-direction: column;
     width: 30%;
+}
+#Blog img{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 /* footer */
