@@ -86,7 +86,23 @@ ul li a{
     padding: 10px 10px 10px 10px;
     width: 25%;
     justify-content: space-around;
- 
-   
+
 }
 
+/* Blogs style */
+
+
+.blogrow{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    width: 25%
+  
+}
+
+.blogcolumn{
+    display: flex;
+    flex-direction: column;
+
+}
