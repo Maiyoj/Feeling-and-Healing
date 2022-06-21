@@ -61,7 +61,11 @@ ul li a{
     color: white;
     border: 2px solid white;
 }
-
+.content button a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
 
 /* About us section */
 #about{
