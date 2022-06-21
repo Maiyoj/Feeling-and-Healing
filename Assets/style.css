@@ -64,6 +64,7 @@ ul li a{
 #therapist{
     background-color: black;
     color:white;
+    height: 110vh;
    
 }
 
@@ -73,11 +74,9 @@ ul li a{
     flex-direction: row;
     margin-bottom: 40px;
     justify-content: space-around;
-  
-
-
-    
+   
 }
+
 .therapist-column{
     display: flex;
     flex-direction: column;
@@ -90,15 +89,11 @@ ul li a{
 }
 
 /* Blogs style */
-
-
 .blogrow{
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
     justify-content: space-around;
-
-  
 }
 
 .blogcolumn{
