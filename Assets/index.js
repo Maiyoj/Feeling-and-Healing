@@ -12,6 +12,17 @@ document.addEventListener('DOMContentLoaded', function(){
         .then(response => response.json())
         .then(data => {
             console.log(data)
+            let paragraph1 = data[8]?.title;
+            let paragraph2 = data[7]?.title;
+            let paragraph3 = data[0]?.title;
+            let p1 = document.getElementById("p1");
+            let p2 = document.getElementById("p2");
+            let p3 = document.getElementById("p3");
+            p1.innerHTML = paragraph1;
+            p2.innerHTML = paragraph2;
+            p3.innerHTML = paragraph3;
+
+
         })
         .catch(err => console.error(err));
     
