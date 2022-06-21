@@ -1,4 +1,4 @@
-
+//fetching data from external public api
 document.addEventListener('DOMContentLoaded', function(){
     const options = {
         method: 'GET',
