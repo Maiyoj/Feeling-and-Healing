@@ -101,3 +101,14 @@ ul li a{
     flex-direction: column;
     width: 30%;
 }
+
+/* footer */
+#footer{
+    background-color: black;
+    color: #74AA2F;
+}
+.rowFooter{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
