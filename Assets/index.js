@@ -10,8 +10,16 @@ document.addEventListener('DOMContentLoaded', function(){
     
     fetch('https://mental-health-info-api.p.rapidapi.com/news/thetimes', options)
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => {
+            // console.log(data[0]?.title)
+        let paragraph = data[0]?.title
+        let addp = document.getElementById('tile blog')
+        //addp.innerHTML = paragraph
+
+        })
         .catch(err => console.error(err));
+
+        
 
 })
 
