@@ -152,7 +152,7 @@ ul li a{
 /* Blogs style */
 #Blog{
     margin-top: 60px;
-    height: 70vh;
+    height: 80vh;
 }
 #Blog h1{
     text-align: center;
@@ -180,13 +180,24 @@ ul li a{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+
 /* footer */
 #footer{
     background-color: black;
-    color: #74AA2F;
+    color: white;
+    height: 50vh;
 }
 .rowFooter{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+#footer h1{
+    text-align: center;
+    padding-top: 30px;
+    color: #74AA2F;
+}
+#footer h2{
+    color: #74AA2F;
+}
+
