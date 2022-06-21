@@ -29,6 +29,25 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 
+//navigation
+window.onscroll = function(){addClass()};
+let navSticky = document.querySelector("nav")
+
+//navbar offset position
+let position = navSticky.offsetTop;
+
+//function to when we scroll add class sticky to navbar
+function addClass(){
+    if(window.pageYOffset>= position){
+        
+        navSticky.classList.add("sticky")
+    }
+    else{
+        navSticky.classList.remove("sticky")
+    }
+   
+ }
+
 
 
 

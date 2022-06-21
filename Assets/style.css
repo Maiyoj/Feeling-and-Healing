@@ -8,6 +8,13 @@
     height: 11vh;
     color: white;
 }
+.sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+}
+
 .logo{
     margin-top: 20px;
     font-size: 20px;
