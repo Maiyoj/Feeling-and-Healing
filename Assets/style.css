@@ -110,16 +110,21 @@ ul li a{
 #therapist{
     background-color: black;
     color:white;
-    height: 110vh;
+    height: 120vh;
    
 }
-
+#therapist h1{
+    text-align: center;
+    color: #74AA2F;
+    padding-top: 30px;
+}
 
 .therapist-row{
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
     justify-content: space-around;
+    margin-top: 60px;
    
 }
 
