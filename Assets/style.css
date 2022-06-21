@@ -47,8 +47,17 @@ ul li a{
 
 
 /* About us section */
+#about{
+    height: 60vh;
+}
 
-
+.aboutBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
 
 
 /* section therapy */
