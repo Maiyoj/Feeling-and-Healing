@@ -49,6 +49,18 @@ function addClass(){
  }
 
 
+//function on submit upadate value
+function updateEmail(){
+
+    let email = document.getElementById('email')
+    let form = document.getElementById('data')
+    form.addEventListener('submit', function(){
+        alert("Thank You For subcribing")
+    })
+
+
+}
+updateEmail()
 
 
 
