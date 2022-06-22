@@ -25,26 +25,48 @@ document.addEventListener('DOMContentLoaded', function(){
         .catch(err => console.error(err));
 
 
+    //Getting Users
+
+
+
+    const optionData = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'e746e9526fmshfd7b8fb75fdde2cp19cfb4jsn5e4f37b754cc',
+            'X-RapidAPI-Host': 'dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com'
+        }
+    };
     
+    fetch('https://dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com/?format=json&gender=b&cc=all&email=gmail.com%2Cyahoo.com&pwlen=12&ip=a&phone=l%2Ct%2Co&seed=helloworld&count=10&maxage=40&minage=30&uuid=1&color=1&lic=1&images=1', optionData)
+        .then(response => response.json())
+        .then(names =>
+            { 
+                names.forEach((name, indexs) => {
+                    const {firstname} = name
+                    let myName = document.querySelectorAll('label')
+                    myName[indexs].innerHTML = name.firstname;
+                   
 
-        // const optionData = {
-        //     method: 'GET',
-        //     headers: {
-        //         'X-RapidAPI-Key': 'e746e9526fmshfd7b8fb75fdde2cp19cfb4jsn5e4f37b754cc',
-        //         'X-RapidAPI-Host': 'dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com'
-        //     }
-        // };
-        
-        // fetch('https://dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com/?format=json&gender=b&cc=all&email=gmail.com%2Cyahoo.com&pwlen=12&ip=a&phone=l%2Ct%2Co&seed=helloworld&count=10&maxage=40&minage=30&uuid=1&color=1&lic=1&images=1', optionData)
-        //     .then(response => response.json())
-        //     .then(data =>
-        //         { console.log(data)
-        //          let img = document.getElementById('p1')
-        //          let dataimg = data[4].firstname
-        //          img.innerHTML = dataimg;
+            })
+        })
+        .catch(err => console.error(err));
 
-        //         })
-        //     .catch(err => console.error(err));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })
 
 //navigation
