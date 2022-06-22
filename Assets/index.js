@@ -15,15 +15,12 @@ document.addEventListener('DOMContentLoaded', function(){
             blogs.forEach((blog, index) => {
               const {title} = blog
               console.log(blog)
-              let bg = document.querySelectorAll('p')
+              let bg = document.querySelectorAll('.para')
               bg[index].innerHTML = blog.title
               
 
                 
             });
-        
-        
-        
         })
         .catch(err => console.error(err));
 
