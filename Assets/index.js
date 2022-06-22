@@ -3,48 +3,51 @@ document.addEventListener('DOMContentLoaded', function(){
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'e746e9526fmshfd7b8fb75fdde2cp19cfb4jsn5e4f37b754cc',
-            'X-RapidAPI-Host': 'mental-health-info-api.p.rapidapi.com'
+            'X-RapidAPI-Key': 'c4a43b0837msh33b8b514d584608p1f6f25jsn120c96a6c374',
+            'X-RapidAPI-Host': 'blog-articles.p.rapidapi.com'
         }
     };
     
-    fetch('https://mental-health-info-api.p.rapidapi.com/news/thetimes', options)
+    fetch('https://blog-articles.p.rapidapi.com/nat', options)
         .then(response => response.json())
-        .then(data => {
-            console.log(data)
-            let paragraph1 = data[8]?.title;
-            let paragraph2 = data[7]?.title;
-            let paragraph3 = data[0]?.title;
-            let p1 = document.getElementById("p1");
-            let p2 = document.getElementById("p2");
-            let p3 = document.getElementById("p3");
-            p1.innerHTML = paragraph1;
-            p2.innerHTML = paragraph2;
-            p3.innerHTML = paragraph3;
+        .then(blogs => {
+            console.log(blogs)
+            blogs.forEach((blog, index) => {
+              const {title} = blog
+              console.log(blog)
+              let bg = document.querySelectorAll('p')
+              bg[index].innerHTML = blog.title
+              
 
-
+                
+            });
+        
+        
+        
         })
         .catch(err => console.error(err));
 
-        //user data names fetch
-        const optionData = {
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': 'e746e9526fmshfd7b8fb75fdde2cp19cfb4jsn5e4f37b754cc',
-                'X-RapidAPI-Host': 'dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com'
-            }
-        };
-        
-        fetch('https://dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com/?format=json&gender=b&cc=all&email=gmail.com%2Cyahoo.com&pwlen=12&ip=a&phone=l%2Ct%2Co&seed=helloworld&count=10&maxage=40&minage=30&uuid=1&color=1&lic=1&images=1', optionData)
-            .then(response => response.json())
-            .then(data =>
-                { console.log(data)
-                 let img = document.getElementById('p1')
-                 let dataimg = data[4].firstname
-                 img.innerHTML = dataimg;
 
-                })
-            .catch(err => console.error(err));
+    
+
+        // const optionData = {
+        //     method: 'GET',
+        //     headers: {
+        //         'X-RapidAPI-Key': 'e746e9526fmshfd7b8fb75fdde2cp19cfb4jsn5e4f37b754cc',
+        //         'X-RapidAPI-Host': 'dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com'
+        //     }
+        // };
+        
+        // fetch('https://dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com/?format=json&gender=b&cc=all&email=gmail.com%2Cyahoo.com&pwlen=12&ip=a&phone=l%2Ct%2Co&seed=helloworld&count=10&maxage=40&minage=30&uuid=1&color=1&lic=1&images=1', optionData)
+        //     .then(response => response.json())
+        //     .then(data =>
+        //         { console.log(data)
+        //          let img = document.getElementById('p1')
+        //          let dataimg = data[4].firstname
+        //          img.innerHTML = dataimg;
+
+        //         })
+        //     .catch(err => console.error(err));
 })
 
 //navigation
@@ -85,15 +88,12 @@ function updateParagraph(){
     let buttonClick = document.getElementById('abtButton')
     buttonClick.addEventListener('click', function(){
         let paragraph = document.getElementById('hide')
-        paragraph.style.display = "block";
-        paragraph.style.fontSize = 5;
-
+        paragraph.style.display = "block"
     })
 }
 updateParagraph()
 
 
-//function humbger menu u
 
 
 
@@ -104,6 +104,31 @@ updateParagraph()
 
 
 
+// const options = {
+//     method: 'GET',
+//     headers: {
+//         'X-RapidAPI-Key': 'e746e9526fmshfd7b8fb75fdde2cp19cfb4jsn5e4f37b754cc',
+//         'X-RapidAPI-Host': 'mental-health-info-api.p.rapidapi.com'
+//     }
+// };
+
+// fetch('https://mental-health-info-api.p.rapidapi.com/news/thetimes', options)
+//     .then(response => response.json())
+//     .then(data => {
+//         console.log(data)
+//         let paragraph1 = data[8]?.title;
+//         let paragraph2 = data[7]?.title;
+//         let paragraph3 = data[0]?.title;
+//         let p1 = document.getElementById("p1");
+//         let p2 = document.getElementById("p2");
+//         let p3 = document.getElementById("p3");
+//         p1.innerHTML = paragraph1;
+//         p2.innerHTML = paragraph2;
+//         p3.innerHTML = paragraph3;
+
+
+//     })
+//     .catch(err => console.error(err));
 
 
 
