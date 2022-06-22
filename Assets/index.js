@@ -71,7 +71,6 @@ function addClass(){
    
  }
 
-
 //function on submit upadate value
 function updateEmail(){
     let input = document.getElementById('email')
@@ -86,7 +85,16 @@ function updateEmail(){
 updateEmail()
 
 
+//display paragraph 
+function updateParagraph(){
+    let buttonClick = document.getElementById('abtButton')
+    buttonClick.addEventListener('click', function(){
+        let paragraph = document.getElementById('hide')
+        paragraph.style.display = "block";
 
+    })
+}
+updateParagraph()
 
 
 

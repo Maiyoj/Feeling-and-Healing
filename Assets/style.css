@@ -123,6 +123,10 @@ ul li a{
     border: 2px solid white;
 }
 
+#hide{
+    display: none;
+}
+
 
 
 /* section therapy */
