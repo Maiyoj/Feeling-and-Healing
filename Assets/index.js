@@ -93,7 +93,7 @@ function updateParagraph(){
 updateParagraph()
 
 
-//function humbger menu
+//function humbger menu u
 
 
 

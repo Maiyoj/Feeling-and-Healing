@@ -249,5 +249,85 @@ ul li a{
    font-size: 20px;
 }
 
-/* Media Queries */
 
+
+/* About Media Queries */
+@media only screen and (max-width: 1411px){
+    .abtContent{
+        margin-top: 30px;
+        font-size: 15px;
+        margin-right: 100px;
+        width: 100%;
+        margin-left: 150px;  
+    }
+    
+    
+
+}
+@media only screen and (max-width: 1411px){
+    .abtImg{
+        width: 40%;
+        margin-left: 50px;
+        
+     }
+
+}
+
+@media only screen and (max-width: 600px){
+    .aboutBody{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+	
+}
+@media only screen and (max-width: 600px){
+    .abtContent{
+       
+        font-size: 15px;
+        width: 80%;
+        margin-left: 40px;
+        align-items: center;
+        font-size: 12px;
+     
+    }
+    
+}
+@media only screen and (max-width: 600px){
+    .abtImg{
+        width: 80%;
+        margin-left: 50px;
+        
+     }
+
+}
+
+/* Therapist media query */
+@media only screen and (max-width: 600px){
+    .thcontent{
+        margin-left: 15px;
+        font-size: 12px;
+     }
+}
+
+@media only screen and (max-width: 600px){
+    .therapist-column{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid  #74AA2F;
+        margin-left: 10px;
+        padding: 2px 5px 2px 2px;
+        width: 25%;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .thcontent button{
+        background-color: #74AA2F;
+        padding: 2px 2px 2px 2px;
+        border-radius: 6px;
+        color: white;
+        border: 1px solid white;
+    }
+}    
