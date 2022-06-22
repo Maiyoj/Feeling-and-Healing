@@ -26,10 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
         })
         .catch(err => console.error(err));
 
-
-
-
-        //user data
+        //user data names fetch
         const optionData = {
             method: 'GET',
             headers: {
@@ -48,9 +45,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 })
             .catch(err => console.error(err));
-    
 })
-
 
 //navigation
 window.onscroll = function(){addClass()};
@@ -91,13 +86,14 @@ function updateParagraph(){
     buttonClick.addEventListener('click', function(){
         let paragraph = document.getElementById('hide')
         paragraph.style.display = "block";
+        paragraph.style.fontSize = 5;
 
     })
 }
 updateParagraph()
 
 
-
+//function humbger menu
 
 
 
