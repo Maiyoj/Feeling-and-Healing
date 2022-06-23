@@ -1,10 +1,10 @@
 # Feeling and Healing
  ## By Valentine Maiyo
 ## Screenshot
- ![image](./Asset/images/)
+ ![image](./Assets/images/thera.png)
  ## Table of Content
  - [Description](#description)
- - [BDD](#Behaviour Driven Development)
+ - [BDD](#Behaviour-Driven-Development)
  - [Features](#features)
  - [Requirements](#requirements)
  - [Installation Process](#installation-Process)
@@ -15,12 +15,12 @@
  ## Description
 Feeling and Healing is an app designed to help you access  therapist at the comfort of your home, and read blogs.
 
-## Behaviour Driven Development(BDD)  
+## Behaviour Driven Development 
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | Display Therapist| **On page load** | Get data on diffrent therapist |
 | Display Blogs  title| **on page load** | list Blogs from different publications |
-|
+
  ###  Features
 
  * User can see diffrent therapist from across the world
