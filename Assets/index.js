@@ -158,12 +158,6 @@ updateParagraph()
 
 
 
-
-
-
-
-
-
 /*document.addEventListener('DOMContentLoaded', function(){
     const options = {
         method: 'GET',
