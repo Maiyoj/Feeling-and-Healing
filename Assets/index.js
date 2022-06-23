@@ -13,17 +13,17 @@ document.addEventListener('DOMContentLoaded', function(){
         .then(blogs => {
             console.log(blogs)
             blogs.data.forEach((blog, index) => {
-              const {content, title} = blog
+              const {content, title,readMoreUrl,imageUrl} = blog
               let paragraph = document.querySelectorAll('.para')
               paragraph[index].innerHTML = blog.content
               let titles  = document.querySelectorAll('.title')
               titles[index].innerHTML = blog.title;
+              let image = document.querySelectorAll('.blogimg img')
+              image[index].src = blog.imageUrl;
                 
             });
         })
         .catch(err => console.error(err));
-
-
 
     //Api to fetch User Details 
     const optionData = {
@@ -38,15 +38,15 @@ document.addEventListener('DOMContentLoaded', function(){
         .then(names =>
             { 
                 names.forEach((name, indexs) => {
-                    const {firstname, lastname,} = name
+                    const {firstname, lastname} = name
                     let myName = document.querySelectorAll('label')
                     myName[indexs].innerHTML = name.firstname +" " + " "+name.lastname;   
-
             })
         })
         .catch(err => console.error(err))
-
 })
+
+//open url onclick
 
 
 

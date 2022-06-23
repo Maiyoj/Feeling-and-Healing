@@ -534,10 +534,9 @@ ul li a{
         height: 120vh;
         font-size: 18px;
         margin-top: 50px;
-        
     }
 }    
-@media only screen and (max-width: 370px){
+@media only screen and (max-width: 390px){
     #Blog{
         height: 140vh;
     }
