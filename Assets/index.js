@@ -1,4 +1,4 @@
-//fetching data from external public api
+//fetching data from external public api to get blogs 
 document.addEventListener('DOMContentLoaded', function(){
     const options = {
         method: 'GET',
@@ -13,22 +13,18 @@ document.addEventListener('DOMContentLoaded', function(){
         .then(blogs => {
             console.log(blogs)
             blogs.forEach((blog, index) => {
-              const {title} = blog
+              const {title, url} = blog
               console.log(blog)
               let bg = document.querySelectorAll('.para')
               bg[index].innerHTML = blog.title
-              
-
                 
             });
         })
         .catch(err => console.error(err));
 
 
-    //Getting Users
 
-
-
+    //Api to fetch User Details 
     const optionData = {
         method: 'GET',
         headers: {
@@ -36,44 +32,28 @@ document.addEventListener('DOMContentLoaded', function(){
             'X-RapidAPI-Host': 'dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com'
         }
     };
-    
     fetch('https://dawn2k-random-german-profiles-and-names-generator-v1.p.rapidapi.com/?format=json&gender=b&cc=all&email=gmail.com%2Cyahoo.com&pwlen=12&ip=a&phone=l%2Ct%2Co&seed=helloworld&count=10&maxage=40&minage=30&uuid=1&color=1&lic=1&images=1', optionData)
         .then(response => response.json())
         .then(names =>
             { 
                 names.forEach((name, indexs) => {
-                    const {firstname} = name
+                    const {firstname, lastname,} = name
                     let myName = document.querySelectorAll('label')
-                    myName[indexs].innerHTML = name.firstname;
-                   
+                    myName[indexs].innerHTML = name.firstname +" " + " "+name.lastname;   
 
             })
         })
-        .catch(err => console.error(err));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        .catch(err => console.error(err))
 
 })
+
+
 
 //navigation
 window.onscroll = function(){addClass()};
 let navSticky = document.querySelector("nav")
 
-//navbar offset position
+//set navbar offset position
 let position = navSticky.offsetTop;
 
 //function to when we scroll add class sticky to navbar
@@ -88,7 +68,7 @@ function addClass(){
    
  }
 
-//function on submit upadate value
+//function on submit of from upadate value
 function updateEmail(){
     let input = document.getElementById('email')
     let form = document.getElementById('data')
@@ -102,7 +82,8 @@ function updateEmail(){
 updateEmail()
 
 
-//display paragraph 
+
+//display paragraph  after clicking on read more 
 function updateParagraph(){
     let buttonClick = document.getElementById('abtButton')
     buttonClick.addEventListener('click', function(){

@@ -20,6 +20,7 @@ font-family: 'Lato', sans-serif;
     width: 100%;
 }
 
+
 .logo{
     margin-top: 20px;
     font-size: 20px;
@@ -205,6 +206,8 @@ ul li a{
 }
 
 
+
+
 /* footer */
 #footer{
     background-color: black;
@@ -249,12 +252,69 @@ ul li a{
    font-size: 20px;
 }
 
+/* nav */
+@media only screen and (max-width: 600px){
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       
+    }
+	
+}
 
+@media only screen and (max-width: 600px){
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       
+    }
+	
+}
+
+@media only screen and (max-width: 600px){
+    ul li a{
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+        padding: 2px;
+        font-size: 11px;
+    }
+    
+	
+}
+
+@media only screen and (max-width: 600px){
+    .logo{
+       margin-top: 18px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    
+	
+}
+ /* Home page */
+ @media only screen and (max-width: 600px){
+
+ .content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding-top: 150px;
+    font-size: 18px;
+    color: white;
+}
+
+.content button{
+
+    padding: 10px 10px 10px 40px;
+    
+}
+
+}
 
 /* About Media Queries */
-/* navbar media queries */
-
-
 @media only screen and (max-width: 1411px){
     .abtContent{
         margin-top: 30px;
@@ -304,7 +364,6 @@ ul li a{
      }
 
 }
-
 /* Therapist media query */
 @media only screen and (max-width: 600px){
     .thcontent{
@@ -322,6 +381,12 @@ ul li a{
         padding: 2px 5px 2px 2px;
         width: 25%;
         justify-content: space-around;
+    }
+    #therapist{
+        background-color: black;
+        color:white;
+        height: 60vh;
+       
     }
 }
 
@@ -341,8 +406,8 @@ ul li a{
         display: flex;
         flex-direction: column;
         margin-bottom: 40px;
-        justify-content: space-around;
-      
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
@@ -351,6 +416,11 @@ ul li a{
         display: flex;
         flex-direction: row;
         width: 100%;
+        justify-content: space-between;
+    }
+    .para{
+    
+        margin-left: 10px;
     }
 }
 
@@ -361,5 +431,25 @@ ul li a{
         border-radius: 6px;
         color: white;
         border: 1px solid white;
+    }
+}    
+
+
+/* contact  */
+@media only screen and (max-width: 600px){
+    .rowFooter{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 20px;
+        width: 100%;
+    }
+    #footer{
+        background-color: black;
+        color: white;
+        height: 120vh;
+        font-size: 18px;
+        margin-top: 50px;
+        
     }
 }    
