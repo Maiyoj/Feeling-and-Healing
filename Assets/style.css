@@ -457,6 +457,12 @@ ul li a{
 /* BLog media queries
  */
  @media only screen and (max-width: 600px){
+
+
+
+    #Blog{
+        height:90vh;
+    }
     .blogrow{
         display: flex;
         flex-direction: column;
