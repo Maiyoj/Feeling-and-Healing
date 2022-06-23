@@ -539,7 +539,7 @@ ul li a{
 }    
 @media only screen and (max-width: 370px){
     #Blog{
-        height: 100vh;
+        height: 140vh;
     }
    
 }

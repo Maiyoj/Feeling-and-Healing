@@ -8,15 +8,16 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     };
     
-    fetch('https://blog-articles.p.rapidapi.com/nat', options)
+    fetch('https://inshorts.deta.dev/news?category=health', options)
         .then(response => response.json())
         .then(blogs => {
             console.log(blogs)
-            blogs.forEach((blog, index) => {
-              const {title, url} = blog
-              console.log(blog)
-              let bg = document.querySelectorAll('.para')
-              bg[index].innerHTML = blog.title
+            blogs.data.forEach((blog, index) => {
+              const {content, title} = blog
+              let paragraph = document.querySelectorAll('.para')
+              paragraph[index].innerHTML = blog.content
+              let titles  = document.querySelectorAll('.title')
+              titles[index].innerHTML = blog.title;
                 
             });
         })
@@ -104,31 +105,6 @@ updateParagraph()
 
 
 
-// const options = {
-//     method: 'GET',
-//     headers: {
-//         'X-RapidAPI-Key': 'e746e9526fmshfd7b8fb75fdde2cp19cfb4jsn5e4f37b754cc',
-//         'X-RapidAPI-Host': 'mental-health-info-api.p.rapidapi.com'
-//     }
-// };
-
-// fetch('https://mental-health-info-api.p.rapidapi.com/news/thetimes', options)
-//     .then(response => response.json())
-//     .then(data => {
-//         console.log(data)
-//         let paragraph1 = data[8]?.title;
-//         let paragraph2 = data[7]?.title;
-//         let paragraph3 = data[0]?.title;
-//         let p1 = document.getElementById("p1");
-//         let p2 = document.getElementById("p2");
-//         let p3 = document.getElementById("p3");
-//         p1.innerHTML = paragraph1;
-//         p2.innerHTML = paragraph2;
-//         p3.innerHTML = paragraph3;
-
-
-//     })
-//     .catch(err => console.error(err));
 
 
 
@@ -155,30 +131,5 @@ updateParagraph()
 
 
 
-
-
-
-/*document.addEventListener('DOMContentLoaded', function(){
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': 'e746e9526fmshfd7b8fb75fdde2cp19cfb4jsn5e4f37b754cc',
-            'X-RapidAPI-Host': 'mental-health-info-api.p.rapidapi.com'
-        }
-    };
-    
-    fetch('https://mental-health-info-api.p.rapidapi.com/news/thetimes', options)
-        .then(response => response.json())
-        .then(data => {
-            // console.log(data[0]?.title)
-        let paragraph = data[0]?.title
-        let addp = document.getElementById('tile blog')
-        //addp.innerHTML = paragraph
-
-        })
-        .catch(err => console.error(err));
-
-})
-*/
 
 
