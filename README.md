@@ -21,6 +21,8 @@ Feeling and Healing is an app designed to help you access  therapist at the comf
 | Display Therapist| **On page load** | Get data on diffrent therapist |
 | Display Blogs  title| **on page load** | list Blogs from different publications |
 | Display contact form| **on click of get in touch** | display a form to fill for you to contact the therapist you choose|
+| Display About paragraph| **on click of read more** | Display hidden paragraph |
+
 
  ###  Features
 
