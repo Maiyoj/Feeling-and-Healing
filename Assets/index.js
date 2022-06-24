@@ -1,4 +1,4 @@
-//fetching data from external public api to get blogs 
+//fetching data from external public api to get blogs, and health news
 document.addEventListener('DOMContentLoaded', function(){
     const options = {
         method: 'GET',
@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function(){
               titles[index].innerHTML = blog.title;
               let image = document.querySelectorAll('.blogimg img')
               image[index].src = blog.imageUrl;
-                
+       
+            
             });
         })
         .catch(err => console.error(err));
@@ -46,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function(){
         .catch(err => console.error(err))
 })
 
-//open url onclick
 
 
 
@@ -84,7 +84,7 @@ updateEmail()
 
 
 
-//display paragraph  after clicking on read more 
+//display about  paragraph  after clicking on read more 
 function updateParagraph(){
     let buttonClick = document.getElementById('abtButton')
     buttonClick.addEventListener('click', function(){
@@ -94,12 +94,40 @@ function updateParagraph(){
 }
 updateParagraph()
 
+///diplay contact form
+function displayContactForm(){
+   
+    let readmore = document.querySelectorAll('#readmore')
+    readmore.forEach((read) => {
+        read.addEventListener('click', function(){
+            let forms = document.querySelectorAll('.theraForm')
+            let heightw = document.getElementById('therapist')
+            forms.forEach((form, index) => {
+                form.style.display = "block"
+             
+            })
+            
+        })
+        
+    })
+    
+
+}
+displayContactForm()
 
 
-
-
-
-
+//fill therapist contact form
+function fillEmail(){
+    let input = document.getElementById('email')
+    let form = document.querySelector('.theraForm')
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        let card = document.getElementById('changes')
+        card.innerHTML = "Thank You For contacting me" + " " + " " + input.value +" " +"A response has been sent to your email"
+        form.reset();
+    })
+}
+fillEmail()
 
 
 

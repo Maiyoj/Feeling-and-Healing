@@ -134,7 +134,7 @@ ul li a{
 #therapist{
     background-color: black;
     color:white;
-    height: 120vh;
+    height: 140vh;
    
 }
 #therapist h1{
@@ -157,7 +157,7 @@ ul li a{
     flex-direction: column;
     border: 2px solid  #74AA2F;
     margin-left: 10px;
-    padding: 10px 10px 20px 10px;
+    padding: 10px 10px 30px 10px;
     width: 25%;
     justify-content: space-around;
 }
@@ -172,6 +172,24 @@ ul li a{
     border-radius: 15px;
     color: white;
     border: 2px solid white;
+}
+
+.theraForm input{
+    margin-bottom: 10px;
+}
+.theraForm button{
+    padding: 10px 20px 10px 30px;
+
+}
+.theraForm{
+    margin-left: 500px;
+    align-items: center;
+    display: none;
+}
+#changes{
+    text-align: center;
+    color: #74AA2F;
+    font-size: 25px;
 }
 
 /* Blogs style */
@@ -455,6 +473,11 @@ ul li a{
         height: 60vh;
        
     }
+    .theraForm{
+        margin-left: 100px;
+        align-items: center;
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -538,7 +561,27 @@ ul li a{
 }    
 @media only screen and (max-width: 390px){
     #Blog{
-        height: 140vh;
+        height: 160vh;
+    }
+    #therapist{
+        height: 220%;
+    }
+ 
+   
+}
+@media only screen and (min-width: 1024px){
+    #therapist{
+        height: 180vh;
+    }
+    .logo{
+        margin-top: 6px;
     }
    
 }
+@media only screen and (min-width: 1024px){
+    #Blog{
+        height: 95vh;
+    }
+   
+}
+

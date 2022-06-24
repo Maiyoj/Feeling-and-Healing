@@ -13,13 +13,14 @@
  - [Licence](#licence)
  - [Authors Info](#Authors-Info)
  ## Description
-Feeling and Healing is an app designed to help you access  therapist at the comfort of your home, and read blogs.
+Feeling and Healing is an app designed to help you access  therapist at the comfort of your home, and read blogs. on health related matters
 
 ## Behaviour Driven Development 
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
 | Display Therapist| **On page load** | Get data on diffrent therapist |
 | Display Blogs  title| **on page load** | list Blogs from different publications |
+| Display contact form| **on click of get in touch** | display a form to fill for you to contact the therapist |
 
  ###  Features
 
@@ -43,12 +44,12 @@ Feeling and Healing is an app designed to help you access  therapist at the comf
  ****
  [Go Back to the top](#)
 ### Live Link
-
+https://maiyoj.github.io/Feeling-and-Healing/
 
 ### Technology  Used
 * HTML - which was used to develope the structure off the pages.
 * CSS - which was used to style the User Interface.
-* Javascript -Used to add interactive behaviour to the page and communicate with a public API.
+* Javascript -Used to add interactive behaviour to the page and communicate with an API.
 
 
 ## Known Bugs
