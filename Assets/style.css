@@ -185,11 +185,17 @@ ul li a{
     margin-left: 500px;
     align-items: center;
     display: none;
+    background-color:#74AA2F;
+    width: 19%;
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
 }
 #changes{
     text-align: center;
     color: #74AA2F;
     font-size: 25px;
+    
 }
 
 /* Blogs style */
@@ -230,7 +236,7 @@ ul li a{
 #footer{
     background-color: black;
     color: white;
-    height: 50vh;
+    height: 60vh;
 }
 .rowFooter{
     display:flex;
@@ -581,6 +587,19 @@ ul li a{
 @media only screen and (min-width: 1024px){
     #Blog{
         height: 95vh;
+    }
+   
+}
+
+@media only screen and (max-width: 550px){
+    .theraForm{
+        width: 50%;
+    }
+    #therapist{
+        height: 100vh;
+    }
+    #Blog{
+        height: 160vh;
     }
    
 }

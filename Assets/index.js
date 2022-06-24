@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 names.forEach((name, indexs) => {
                     const {firstname, lastname} = name
                     let myName = document.querySelectorAll('label')
-                    myName[indexs].innerHTML = name.firstname +" " + " "+name.lastname;   
+                    myName[indexs].innerHTML = name.firstname +" " + " "+ name.lastname;   
             })
         })
         .catch(err => console.error(err))
