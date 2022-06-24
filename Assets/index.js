@@ -115,8 +115,7 @@ function displayContactForm(){
 }
 displayContactForm()
 
-
-//fill therapist contact form
+//fill therapist contact form function
 function fillEmail(){
     let input = document.getElementById('email')
     let form = document.querySelector('.theraForm')
