@@ -63,7 +63,7 @@ function addClass(){
    
  }
 
-//function on submit of from upadate value
+//function on submit of from update value
 function updateEmail(){
     let input = document.getElementById('email')
     let form = document.getElementById('data')
