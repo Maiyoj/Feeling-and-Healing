@@ -48,7 +48,7 @@ Feeling and Healing is an app designed to help you access  therapist at the comf
 
 
  ****
- [Go Back to the top](#)
+
 ### Live Link
 https://maiyoj.github.io/Feeling-and-Healing/
 
