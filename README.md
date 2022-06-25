@@ -35,6 +35,10 @@ Feeling and Healing is an app designed to help you access  therapist at the comf
  * Access to  a laptop or a phone or a desktop computer
  * Access to internet
  * have latest version of browser installed
+ * Install Node js
+ * Install JSON server
+ ## Installing JSON server 
+ npm install -g json-server
  ### Installation Process
 * Fork or Download the repository
 * clone the repository
@@ -51,7 +55,8 @@ https://maiyoj.github.io/Feeling-and-Healing/
 ### Technology  Used
 * HTML - which was used to develope the structure off the pages.
 * CSS - which was used to style the User Interface.
-* Javascript -Used to add interactive behaviour to the page and communicate with an API.
+* Javascript -Used to add interactive behaviour to the page.
+* API
 
 
 ## Known Bugs

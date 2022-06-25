@@ -1,14 +1,7 @@
 //fetching data from external public api to get blogs, and health news
 document.addEventListener('DOMContentLoaded', function(){
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': 'c4a43b0837msh33b8b514d584608p1f6f25jsn120c96a6c374',
-            'X-RapidAPI-Host': 'blog-articles.p.rapidapi.com'
-        }
-    };
-    
-    fetch('https://inshorts.deta.dev/news?category=health', options)
+   
+    fetch('https://inshorts.deta.dev/news?category=health')
         .then(response => response.json())
         .then(blogs => {
             console.log(blogs)
@@ -21,10 +14,9 @@ document.addEventListener('DOMContentLoaded', function(){
               let image = document.querySelectorAll('.blogimg img')
               image[index].src = blog.imageUrl;
        
-            
             });
         })
-        .catch(err => console.error(err));
+    
 
     //Api to fetch User Details 
     const optionData = {
@@ -44,14 +36,16 @@ document.addEventListener('DOMContentLoaded', function(){
                     myName[indexs].innerHTML = name.firstname +" " + " "+ name.lastname;   
             })
         })
-        .catch(err => console.error(err))
+        getUserName()
 })
 
 
 
 
-//navigation
-window.onscroll = function(){addClass()};
+//navigation script
+window.onscroll = function(){
+    addClass()
+};
 let navSticky = document.querySelector("nav")
 
 //set navbar offset position
@@ -129,10 +123,16 @@ function fillEmail(){
 fillEmail()
 
 
+//Streching Goals fetching data from DB-json sever
+function getUserName(){
+    fetch("http://localhost:3000/Users_Details")
+    .then((res) => res.json())
+    .then((names) =>{
+        let name = document.querySelector('#Names')
+        name.innerHTML = names[0].FirstName
+    })
 
-
-
-
+}
 
 
 
