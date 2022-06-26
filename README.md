@@ -56,7 +56,7 @@ https://maiyoj.github.io/Feeling-and-Healing/
 * HTML - which was used to develope the structure off the pages.
 * CSS - which was used to style the User Interface.
 * Javascript -Used to add interactive behaviour to the page.
-* API
+* Public API
 
 
 ## Known Bugs
