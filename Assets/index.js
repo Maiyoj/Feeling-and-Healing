@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function(){
     fetch('https://inshorts.deta.dev/news?category=health')
         .then(response => response.json())
         .then(blogs => {
-            console.log(blogs)
             blogs.data.forEach((blog, index) => {
               const {content, title,readMoreUrl,imageUrl} = blog
               let paragraph = document.querySelectorAll('.para')
@@ -91,12 +90,11 @@ updateParagraph()
 ///diplay contact form
 function displayContactForm(){
    
-    let readmore = document.querySelectorAll('#readmore')
-    readmore.forEach((read) => {
+    let readMore = document.querySelectorAll('#readmore')
+    readMore.forEach((read) => {
         read.addEventListener('click', function(){
             let forms = document.querySelectorAll('.theraForm')
-            let heightw = document.getElementById('therapist')
-            forms.forEach((form, index) => {
+            forms.forEach((form) => {
                 form.style.display = "block"
              
             })
@@ -118,6 +116,7 @@ function fillEmail(){
         let card = document.getElementById('changes')
         card.innerHTML = "Thank You For contacting me" + " " + " " + input.value +" " +"A response has been sent to your email"
         form.reset();
+        form.style.display = "none"
     })
 }
 fillEmail()
